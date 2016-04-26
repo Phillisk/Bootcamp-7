@@ -15,5 +15,5 @@ def sum_digits(A):
 
 	return total
 
-print sum_digits([10, 30, 45])
+
 
