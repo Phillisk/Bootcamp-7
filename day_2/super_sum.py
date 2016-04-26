@@ -1,7 +1,9 @@
 def super_sum(A):
 	'''
-	Takes a list of numbers(A), divide the even numbers by 2 and multiply the odd numbers by 2
-	then adds the results.
+	Takes a list of numbers(A), and:
+		halves the even numbers
+		mdoubles the odd numbers
+	then returns the sum of all
 	
 	'''
 	total = 0
@@ -14,6 +16,5 @@ def super_sum(A):
 	
 	return total
 
-super_sum([2,3])	
 
 
