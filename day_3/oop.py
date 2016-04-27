@@ -1,21 +1,13 @@
-class Person:
-	# class variables
-	people_count = 0
-
-	def __init__(self, name, age):
-		# instance variables
-		self.name = name
-		self.age = age
-		Person.people_count +=1
-
-	def __repr__(self):
-		return "<object: {}, {}> ".format(self.name, self.age)
-
-	def say_hello(self):
-		return "Hello, I'm {} and {} y/o".format(self.name, self.age)
-
+from person import Person
+from kenyan import Kenyan
+# PEP8
+# Instance vs class variables
+# class methods
 
 p = Person('joe', 23)
+print p
+
+
 p2 = Person('jane', 23)
 p3 = Person('George', 49)
 
@@ -37,3 +29,12 @@ print p.name
 print p.age
 print Person.people_count
 print p2.people_count
+
+
+k = Kenyan('Miguna', 23)
+
+k.probe(True)
+print "Is {} corrupt? {}".format(k.name, k.is_corrupt())
+print k.say_hello()
+
+print k.corrupt
