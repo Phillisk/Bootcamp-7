@@ -8,19 +8,22 @@ def solution(N):
 		because N has binary representation 10000010001 and 
 		so its longest binary gap is of length 5.
 	'''
-	cnt = 0
+	count = 0
 	result = 0
-	found_one = False
+	one = False
 	i = N
+
 	while i:
 		if i & 1 == 1:
-			if (found_one == False):
-				found_one = True
+
+			if one == False:
+				one = True
+				
 			else:
-				result = max(result,cnt)
-			cnt = 0
+				result = max(result,count)
+			count = 0
 		else:
-			cnt += 1
+			count += 1
 		i >>= 1
 	return result
 

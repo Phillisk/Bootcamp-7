@@ -10,7 +10,7 @@ def words(A):
 	free: 1
 	'''	
 
-	a = A.split(' ')
+	a = A.split()
 	
 	# initialize an empty dictionary
 	dict1 = {}
@@ -18,8 +18,6 @@ def words(A):
 
 	for i in a:
 		dict1[i] = a.count(i)
-		print type(i.strip("'"))
-
 	return dict1
 
 # print words("he he went there he")
