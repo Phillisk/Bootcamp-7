@@ -17,8 +17,16 @@ def words(A):
 	b = len(a) 
 
 	for i in a:
-		dict1[i] = a.count(i)
+		if i.isdigit():
+			i = int(i)
+			
+		if i in dict1:
+			dict1[i] = a.count(i)
+		else:
+		    dict1[i] = 1
+		    
 	return dict1
+
 
 # print words("he he went there he")
 # print words("he he went 2 he 2 yes no yes")

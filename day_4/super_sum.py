@@ -14,8 +14,6 @@ def super_sum(*args):
 	if not args:
 		return 0
 
-	
-
 	else:
 		
 		for x in args:
